@@ -1,0 +1,220 @@
+
+
+/* Global styles
+------------------------*/
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding:0;
+}
+
+body {
+    background: linear-gradient(rgba(182,208,148,0.8),rgba(182,208,148,0.6)),
+                url(https://unsplash.it/1920/1200?image=400) no-repeat fixed;
+    background-size: cover; 
+    font-family: 'Kalam', cursive;
+    color: #131200;
+}
+
+a {
+    color: #5a0000;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+abbr {
+    text-decoration: none;
+}
+
+h3 {
+    padding: 10px 0px;
+}   
+
+
+/* Header
+------------------------*/
+section div {
+    background: rgba(239,241,243,0.7);
+}
+
+header {
+    padding: 200px 0px 200px;
+    font-weight: 700;
+    text-align: center;
+    background: rgba(255,255,255,0);
+    color: rgba(107,142,35,0.4)
+}
+
+header h1 {
+    text-transform: uppercase;
+    font-size: 100px;
+    text-shadow: 0 1px 0 #ccc,
+                 0 2px 0 #c9c9c9,
+                 0 3px 0 #bbb,
+                 0 4px 0 #b9b9b9,
+                 0 5px 0 #aaa,
+                 0 6px 1px rgba(0,0,0,.1),
+                 0 0 5px rgba(0,0,0,.1),
+                 0 1px 3px rgba(0,0,0,.3),
+                 0 3px 5px rgba(0,0,0,.2),
+                 0 5px 10px rgba(0,0,0,.25),
+                 0 10px 10px rgba(0,0,0,.2),
+                 0 20px 20px rgba(0,0,0,.15);
+}
+
+header h2 {
+    font-size: 50px;
+}
+
+
+/* Main
+------------------------*/
+
+.page-wrapper {
+    margin: 0 auto;
+    position: relative;
+}
+
+
+.main {
+	float:left;
+	width: 70%;
+}
+
+.sidebar {
+	float: left;
+    width: 30%;
+    background: rgba(0,129,72,0.6);
+    padding: 25px 45px;
+    min-height: 1300px;
+}
+
+#design-selection {
+    padding: 0px 0px 25px;
+}
+
+#design-selection li {
+    border-bottom: 1px solid rgba(0, 85, 82,0.2);
+    padding: 5px 0px;
+}
+
+#design-archives, #zen-resources {
+    padding: 25px 0px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    line-height: 2;
+}
+
+nav {
+    font-size: 12px;
+}
+
+.design-name {
+    font-size: 16px;
+    display: block;
+}
+
+.designer-name {
+    text-transform: uppercase;
+}
+
+.next, .viewall {
+    font-size: 16px;
+}
+
+.indicator {
+    font-size: 0;
+}
+
+#zen-summary {
+    padding: 50px 0px;
+    font-size: 28px;
+    text-align: center;
+}
+
+.preamble {
+    padding: 10px 0px 50px;
+}
+
+.summary *, .preamble * {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.explanation {
+    background: rgba(107,191,89,0.8);
+    padding: 25px 50px;
+}
+
+.participation, .requirements {
+    background: rgba(105,143,63,0.8);
+    padding: 25px 50px;
+}
+
+.benefits {
+    padding: 0px 50px;
+    background: rgba(105,143,63,0.8);
+}
+
+
+/* Footer
+------------------------*/
+footer {
+    padding: 80px 0px;
+    width: 100%;
+    background: rgba(19,18,0,1);
+    text-align: center;
+    min-height: 100px;
+    position: absolute;
+    top: auto;
+    left: 0;
+    right: 0;
+}
+
+footer > a {
+    visibility: hidden;
+}
+
+footer a:before {
+    display: inline-block;
+    padding: 20px;
+    color: rgba(255,255,255,0.5);
+    font-family: FontAwesome;
+    font-size: 40px;
+    visibility: visible;
+}
+
+footer a:hover::before {
+    color: rgba(255,255,255,0.9);
+}
+
+a.zen-validate-html:before {
+    content: "\f13b";
+}
+
+a.zen-validate-css:before {
+    content: "\f13c";
+}
+
+a.zen-license:before {
+    content: "\f15b";
+}
+
+a.zen-accessibility:before {
+    content: "\f00a";
+}
+
+a.zen-github:before {
+    content: "\f09b";
+}
